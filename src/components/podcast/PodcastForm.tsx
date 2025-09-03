@@ -90,7 +90,7 @@ export function PodcastForm() {
 
     try {
       // Submit directly to Google Apps Script
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwdFPTrJSBw7Nr92cFHq1tyh9b_c4UyAWED90OA1oUsS4OZGBY3lGH9FKJWb1DnGAv6Cg/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbw6jtaq7-TWnXL64Boe4KEoLjynj7k8TrF2Wwt_QiInNeeOKEhRyHbUnnLccCWa9d-LMw/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
