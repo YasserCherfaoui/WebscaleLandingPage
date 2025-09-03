@@ -83,14 +83,23 @@ export function PodcastForm() {
 
   const selectedInterests = watch('interests') || [];
 
-  const onSubmit = async (data: any) => {
+    const onSubmit = async (data: any) => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
     setErrorMessage('');
 
+    // Use proxy in development, direct URL in production
+    const isDevelopment = import.meta.env.DEV;
+    const baseUrl = isDevelopment 
+      ? '/api/google-apps-script' 
+      : '/api/proxy-podcast-form';
+    const scriptPath = isDevelopment 
+      ? '/macros/s/AKfycbwdFPTrJSBw7Nr92cFHq1tyh9b_c4UyAWED90OA1oUsS4OZGBY3lGH9FKJWb1DnGAv6Cg/exec'
+      : '';
+
     try {
-      // Submit directly to Google Apps Script
-      const response = await fetch('https://script.google.com/macros/s/AKfycbw6jtaq7-TWnXL64Boe4KEoLjynj7k8TrF2Wwt_QiInNeeOKEhRyHbUnnLccCWa9d-LMw/exec', {
+      // Try direct fetch first
+      const response = await fetch(`${baseUrl}${scriptPath}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -119,8 +128,42 @@ export function PodcastForm() {
       }
     } catch (error) {
       console.error('Form submission error:', error);
-      setSubmitStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : 'حدث خطأ غير متوقع');
+      
+      // If direct fetch fails, try alternative approach
+      try {
+        // Try with different headers and JSON format
+        const response = await fetch(`${baseUrl}${scriptPath}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          },
+          body: JSON.stringify({
+            action: 'submitPodcastForm',
+            data: {
+              ...data,
+              timestamp: new Date().toISOString(),
+              source: 'podcast-landing-page'
+            }
+          })
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          if (result.success) {
+            setSubmitStatus('success');
+            reset();
+          } else {
+            throw new Error(result.message || 'فشل في إرسال البيانات');
+          }
+        } else {
+          throw new Error('فشل في إرسال البيانات');
+        }
+      } catch (fallbackError) {
+        console.error('Fallback submission error:', fallbackError);
+        setSubmitStatus('error');
+        setErrorMessage('حدث خطأ في الاتصال. يرجى المحاولة مرة أخرى لاحقاً.');
+      }
     } finally {
       setIsSubmitting(false);
     }

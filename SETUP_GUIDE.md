@@ -62,6 +62,27 @@ npm run build
 2. **Form Not Submitting**: Check network tab for API errors
 3. **Build Errors**: Check TypeScript compilation
 
+### CORS Issue Fix:
+If you encounter CORS errors like "Response to preflight request doesn't pass access control check":
+
+**Development (Local):**
+- The project now includes a Vite proxy configuration that handles CORS automatically
+- No additional setup needed for local development
+
+**Production:**
+1. **Deploy the serverless function** (`api/proxy-podcast-form.js`) to your hosting platform
+2. **For Vercel:** Place the file in `/api/` directory
+3. **For Netlify:** Place the file in `/functions/` directory
+4. **The form automatically detects environment** and uses the appropriate endpoint
+
+**Alternative: Redeploy Google Apps Script**
+1. **Redeploy your Apps Script** with the updated code
+2. **Make sure the Apps Script has the correct CORS headers** (already included in the code)
+3. **Update the form URL** with the new deployment URL
+4. **Clear browser cache** and try again
+
+**The form includes a fallback mechanism** that tries alternative submission methods if the primary method fails. Both methods use JSON format with proper headers.
+
 ### Debug Mode:
 Add `DEBUG=true` to environment variables for detailed logging.
 
