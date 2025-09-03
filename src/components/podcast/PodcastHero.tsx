@@ -60,33 +60,13 @@ export function PodcastHero() {
         {/* CTA Button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
           <button 
-            onClick={() => {
-              const element = document.querySelector('#register');
-              if (element) {
-                const navbarHeight = 80;
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-                window.scrollTo({
-                  top: elementPosition,
-                  behavior: 'smooth'
-                });
-              }
-            }}
+            onClick={scrollToForm}
             className="bg-gradient-to-r from-[#fbbc05] to-[#715a1a] hover:from-[#fbbc05]/90 hover:to-[#c89d1b]/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
             سجل الآن للحصول على الدعوة
           </button>
           <button 
-            onClick={() => {
-              const element = document.querySelector('#register');
-              if (element) {
-                const navbarHeight = 80;
-                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-                window.scrollTo({
-                  top: elementPosition,
-                  behavior: 'smooth'
-                });
-              }
-            }}
+            onClick={scrollToForm}
             className="border-2 border-[#fbbc05] text-[#fbbc05] hover:bg-[#fbbc05] hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
           >
             استمع إلى عينة

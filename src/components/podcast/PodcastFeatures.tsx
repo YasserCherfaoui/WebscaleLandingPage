@@ -9,6 +9,18 @@ import {
     Zap
 } from 'lucide-react';
 
+const scrollToForm = () => {
+  const element = document.querySelector('#register');
+  if (element) {
+    const navbarHeight = 80;
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+    window.scrollTo({
+      top: elementPosition,
+      behavior: 'smooth'
+    });
+  }
+};
+
 const features = [
   {
     icon: BotMessageSquare,
@@ -98,17 +110,7 @@ export function PodcastFeatures() {
               سجل الآن واحصل على دعوة خاصة للانضمام إلى مجتمعنا الحصري
             </p>
             <button 
-              onClick={() => {
-                const element = document.querySelector('#register');
-                if (element) {
-                  const navbarHeight = 80;
-                  const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-                  window.scrollTo({
-                    top: elementPosition,
-                    behavior: 'smooth'
-                  });
-                }
-              }}
+              onClick={scrollToForm}
               className="bg-white text-[#fbbc05] px-8 py-3 rounded-lg font-semibold hover:bg-neutral-100 transition-colors duration-300"
             >
               سجل الآن مجاناً
