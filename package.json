@@ -1,8 +1,12 @@
 {
-  "name": "vite-template",
+  "name": "webscale-podcast-landing",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "WEBSCALE Podcast Landing Page - AFRICAN BUSINESS VOICE",
+  "keywords": ["podcast", "webscale", "african business voice", "business community", "algeria"],
+  "author": "WEBSCALE",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -35,6 +39,7 @@
     "lucide-react": "^0.542.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-helmet-async": "^2.0.5",
     "react-hook-form": "^7.62.0",
     "react-router-dom": "6.23.0",
     "tailwind-variants": "3.1.0",
