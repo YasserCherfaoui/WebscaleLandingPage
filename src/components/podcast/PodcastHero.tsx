@@ -1,4 +1,4 @@
-import { Clock, Headphones, Play, Users } from 'lucide-react';
+import { Headphones } from 'lucide-react';
 
 const scrollToForm = () => {
   const element = document.querySelector('#register');
@@ -38,25 +38,6 @@ export function PodcastHero() {
           انضم إلى مجتمع حصري من أرباب الأعمال واستمع إلى أحدث الرؤى والتقنيات
         </p>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12" data-aos="fade-up" data-aos-delay="300">
-          <div className="flex flex-col items-center">
-            <Users className="w-8 h-8 text-[#fbbc05] mb-2" />
-            <div className="text-2xl font-bold text-neutral-800 dark:text-neutral-100">+500</div>
-            <div className="text-sm text-neutral-600 dark:text-neutral-400">رجل أعمال</div>
-          </div>
-          <div className="flex flex-col items-center">
-            <Play className="w-8 h-8 text-[#fbbc05] mb-2" />
-            <div className="text-2xl font-bold text-neutral-800 dark:text-neutral-100">+50</div>
-            <div className="text-sm text-neutral-600 dark:text-neutral-400">حلقة</div>
-          </div>
-          <div className="flex flex-col items-center">
-            <Clock className="w-8 h-8 text-[#fbbc05] mb-2" />
-            <div className="text-2xl font-bold text-neutral-800 dark:text-neutral-100">أسبوعياً</div>
-            <div className="text-sm text-neutral-600 dark:text-neutral-400">محتوى جديد</div>
-          </div>
-        </div>
-
         {/* CTA Button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
           <button 
@@ -64,12 +45,6 @@ export function PodcastHero() {
             className="bg-gradient-to-r from-[#fbbc05] to-[#715a1a] hover:from-[#fbbc05]/90 hover:to-[#c89d1b]/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
             سجل الآن للحصول على الدعوة
-          </button>
-          <button 
-            onClick={scrollToForm}
-            className="border-2 border-[#fbbc05] text-[#fbbc05] hover:bg-[#fbbc05] hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300"
-          >
-            استمع إلى عينة
           </button>
         </div>
 
