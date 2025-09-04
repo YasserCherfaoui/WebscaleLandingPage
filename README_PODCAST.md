@@ -212,3 +212,6 @@ window.addEventListener('error', (e) => {
 - ✅ ربط Google Sheets
 - ✅ دعم RTL
 - ✅ تصميم متجاوب
+
+
+.
