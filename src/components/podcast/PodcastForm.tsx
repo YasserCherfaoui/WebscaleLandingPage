@@ -281,12 +281,14 @@ export function PodcastForm() {
                   <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
                     المسمى الوظيفي *
                   </label>
-                  <input
+                  <select
                     {...register('jobTitle')}
-                    type="text"
                     className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 focus:ring-2 focus:ring-[#fbbc05] focus:border-transparent"
-                    placeholder="المدير التنفيذي، صاحب العمل، إلخ"
-                  />
+                  >
+                    <option value="">اختر المسمى الوظيفي</option>
+                    <option value="المدير التنفيذي/ صاحب العمل">المدير التنفيذي/ صاحب العمل</option>
+                    <option value="وظيفة أخرى">وظيفة أخرى</option>
+                  </select>
                   {errors.jobTitle && (
                     <p className="text-red-500 text-sm mt-1">{errors.jobTitle.message}</p>
                   )}
