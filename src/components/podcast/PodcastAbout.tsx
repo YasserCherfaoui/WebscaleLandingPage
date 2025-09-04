@@ -1,4 +1,4 @@
-import { Award, Building2, Target, Users } from 'lucide-react';
+import { Building2, Target, Users } from 'lucide-react';
 
 export function PodcastAbout() {
   return (
@@ -11,8 +11,7 @@ export function PodcastAbout() {
               عن منصة <span className="bg-gradient-to-r from-[#fbbc05] to-[#e0bb57] text-transparent bg-clip-text">WEBSCALE</span>
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-6 leading-relaxed">
-              WEBSCALE هي منصة رائدة في مجال التجارة الإلكترونية والذكاء الاصطناعي، مخصصة حصرياً لأرباب الأعمال والمؤسسات. 
-              نهدف إلى بناء مجتمع قوي من رواد الأعمال الذين يسعون إلى تطوير أعمالهم باستخدام أحدث التقنيات.
+              هي مجتمع حصري خصصناه لأرباب العمل انطلاقا من قناعتنا بأن تسريع نمو المؤسسات الجزائرية لا يتحقق إلا من خلال ابتكار المقاول في استخدام التكنولوجيا. ومن هذا المنطلق، تهدف المبادرة إلى مرافقة المقاول الجزائري وتمكينه من فهم وتبنّي الأدوات التكنولوجية الحديثة، بما يُمكّنه من مضاعفة أثر مشاريعه ورفع قدرته التنافسية، كما نهدف لتطوير الفكر والقدرات العقلية لاصحاب المؤسسات والمسيرين من اجل نجاح مشاريعهم بشكل أفضل واسرع وان تصبح واب سكايل مرجع لبيئة الاعمال في الجزائر
             </p>
             
             <div className="space-y-4 mb-8">
@@ -35,7 +34,7 @@ export function PodcastAbout() {
                     شبكة علاقات قوية
                   </h3>
                   <p className="text-sm text-neutral-600 dark:text-neutral-300">
-                    تواصل مع خبراء الصناعة وأصحاب المشاريع الناجحة
+                    تواصل مع الخبراء وأصحاب المشاريع الناجحة بشكل مباشر
                   </p>
                 </div>
               </div>
@@ -58,42 +57,33 @@ export function PodcastAbout() {
                 🎯 مهمتنا
               </h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-300">
-                تمكين أرباب الأعمال من الاستفادة من قوة الذكاء الاصطناعي والتجارة الإلكترونية لبناء أعمال مستدامة ومربحة
+                واب سكايل هي المنصة الجزائرية التي تمكّن أصحاب المؤسسات و مسيريها من تنمية قدراتهم الفكرية وتحويل التكنولوجيا والذكاء الاصطناعي إلى ابتكار عملي يضاعف أثر مشاريعهم ويعزز تنافسيتهم
               </p>
             </div>
           </div>
 
-          {/* Stats */}
+          {/* Podcast Info */}
           <div data-aos="fade-left">
             <div className="bg-gradient-to-br from-[#fbbc05]/10 to-[#e0bb57]/10 rounded-2xl p-8 border border-[#fbbc05]/20">
-              <h3 className="text-2xl font-bold text-neutral-800 dark:text-neutral-100 mb-8 text-center">
-                إحصائيات WEBSCALE
+              <h3 className="text-2xl font-bold text-neutral-800 dark:text-neutral-100 mb-6 text-center">
+                عن البودكاست
               </h3>
               
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#fbbc05] mb-2">+1000</div>
-                  <div className="text-sm text-neutral-600 dark:text-neutral-300">عضو نشط</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#fbbc05] mb-2">+200</div>
-                  <div className="text-sm text-neutral-600 dark:text-neutral-300">شركة مشاركة</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#fbbc05] mb-2">+50</div>
-                  <div className="text-sm text-neutral-600 dark:text-neutral-300">خبير متعاون</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#fbbc05] mb-2">+100</div>
-                  <div className="text-sm text-neutral-600 dark:text-neutral-300">ورشة عمل</div>
-                </div>
+              <p className="text-neutral-600 dark:text-neutral-300 mb-6 leading-relaxed">
+                بالإضافة إلى الخدمات المتنوعة التي نقدمها لمجتمعنا الخاص، نقدم لكم بودكاست <strong>"AFRICAN BUSINESS VOICE"</strong> لنغوص بكم في التجارب العملية والمحتوى العملي المباشر مع مجموعة من الخبراء في مختلف القطاعات
+              </p>
+
+              <div className="bg-white dark:bg-neutral-800 rounded-lg p-4 mb-6">
+                <h4 className="font-semibold text-neutral-800 dark:text-neutral-100 mb-3">حلقات البودكاست</h4>
+                <p className="text-sm text-neutral-600 dark:text-neutral-300">
+                  بمناسبة معرض التجارة البينية الافريقية خصصنا لكم الحلقات الاولى من البودكاست حول اهمية المشاركة في هذا المعرض وفرص ولوج الاسواق الافريقية وتصدير المنتجات والسلع وحتى الخدمات الجزائرية نحو مختلف دول قارتنا الافريقية
+                </p>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-[#fbbc05]/20">
-                <div className="flex items-center justify-center gap-2 text-[#fbbc05]">
-                  <Award className="w-5 h-5" />
-                  <span className="font-semibold">منصة معتمدة من وزارة التجارة</span>
-                </div>
+              <div className="bg-gradient-to-r from-[#fbbc05] to-[#e0bb57] rounded-lg p-4 text-white text-center">
+                <p className="font-semibold">
+                  هذا البودكاست يأتيكم برعاية وزارة اقتصاد المعرفة والشركات الناشئة والشركات المصغرة
+                </p>
               </div>
             </div>
           </div>

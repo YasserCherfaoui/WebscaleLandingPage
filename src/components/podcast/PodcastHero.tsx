@@ -29,13 +29,13 @@ export function PodcastHero() {
           </span>
           <br />
           <span className="text-neutral-800 dark:text-neutral-100">
-            رؤى الذكاء الاصطناعي في التجارة الإلكترونية
+            "AFRICAN BUSINESS VOICE"
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-xl sm:text-2xl text-neutral-600 dark:text-neutral-300 mb-8 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-          انضم إلى مجتمع حصري من أرباب الأعمال واستمع إلى أحدث الرؤى والتقنيات في مجال الذكاء الاصطناعي والتجارة الإلكترونية
+          انضم إلى مجتمع حصري من أرباب الأعمال واستمع إلى أحدث الرؤى والتقنيات
         </p>
 
         {/* Stats */}

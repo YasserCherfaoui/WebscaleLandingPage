@@ -187,7 +187,7 @@ export function PodcastForm() {
             سجل للحصول على <span className="bg-gradient-to-r from-[#fbbc05] to-[#e0bb57] text-transparent bg-clip-text">دعوة خاصة</span>
           </h2>
           <p className="text-xl text-neutral-600 dark:text-neutral-300">
-            انضم إلى مجتمع WEBSCALE الحصري واحصل على وصول كامل للبودكاست والمحتوى
+            انضم إلى مجتمع WEBSCALE الحصري واحصل على وصول كامل للبودكاست مجانا
           </p>
         </div>
 
