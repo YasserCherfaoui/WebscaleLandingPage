@@ -94,7 +94,7 @@ export function PodcastForm() {
       ? '/api/google-apps-script' 
       : '/api/proxy-podcast-form';
     const scriptPath = isDevelopment 
-      ? '/macros/s/AKfycby7QZXxUvHnDbRsYMa6cezeESPiuPwe_tHBp6uZCefCLOVOpN4jvrXA75a5NhpZUfezMg/exec'
+      ? '/macros/s/AKfycbyRIlLEyOocZy-jV_LLwgNTML5gdRmuKMIwU_1pkiLE9sbxp6bScdVPEX8qD6qHB6MYxw/exec'
       : '';
 
     try {
