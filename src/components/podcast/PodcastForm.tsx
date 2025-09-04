@@ -94,7 +94,7 @@ export function PodcastForm() {
       ? '/api/google-apps-script' 
       : '/api/proxy-podcast-form';
     const scriptPath = isDevelopment 
-      ? '/macros/s/AKfycbwdFPTrJSBw7Nr92cFHq1tyh9b_c4UyAWED90OA1oUsS4OZGBY3lGH9FKJWb1DnGAv6Cg/exec'
+      ? '/macros/s/AKfycby7QZXxUvHnDbRsYMa6cezeESPiuPwe_tHBp6uZCefCLOVOpN4jvrXA75a5NhpZUfezMg/exec'
       : '';
 
     try {
@@ -286,8 +286,8 @@ export function PodcastForm() {
                     className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 focus:ring-2 focus:ring-[#fbbc05] focus:border-transparent"
                   >
                     <option value="">اختر المسمى الوظيفي</option>
-                    <option value="المدير التنفيذي/ صاحب العمل">المدير التنفيذي/ صاحب العمل</option>
-                    <option value="وظيفة أخرى">وظيفة أخرى</option>
+                    <option value="Job1">المدير التنفيذي/ صاحب العمل</option>
+                    <option value="Job2">وظيفة أخرى</option>
                   </select>
                   {errors.jobTitle && (
                     <p className="text-red-500 text-sm mt-1">{errors.jobTitle.message}</p>
