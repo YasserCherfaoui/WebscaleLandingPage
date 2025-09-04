@@ -247,7 +247,7 @@ export function PodcastForm() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">
-                    رقم الهاتف *
+                    رقم الهاتف (WhatsApp)*
                   </label>
                   <input
                     {...register('phone')}
