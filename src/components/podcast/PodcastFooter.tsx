@@ -109,10 +109,10 @@ export function PodcastFooter() {
               <a href="#" className="w-10 h-10 bg-neutral-800 hover:bg-[#fbbc05] rounded-lg flex items-center justify-center transition-colors duration-300">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-neutral-800 hover:bg-[#fbbc05] rounded-lg flex items-center justify-center transition-colors duration-300">
+              <a href="https://www.instagram.com/webscale.dz/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-neutral-800 hover:bg-[#fbbc05] rounded-lg flex items-center justify-center transition-colors duration-300">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-neutral-800 hover:bg-[#fbbc05] rounded-lg flex items-center justify-center transition-colors duration-300">
+              <a href="https://www.linkedin.com/company/webscalepro/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-neutral-800 hover:bg-[#fbbc05] rounded-lg flex items-center justify-center transition-colors duration-300">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-neutral-800 hover:bg-[#fbbc05] rounded-lg flex items-center justify-center transition-colors duration-300">
